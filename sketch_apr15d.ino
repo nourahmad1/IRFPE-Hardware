@@ -1,15 +1,12 @@
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7789.h> // ST7789 driver library
 #include <SPI.h>             // SPI library
-
 // Define pin connections
 #define TFT_CS    22 // Chip Select pin
 #define TFT_RST   17 // Reset pin
 #define TFT_DC    16  // Data/Command pin
-
-// Initialize the display objecjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjt
+// Initialize the display object
 Adafruit_ST7789 tft = Adafruit_ST7789(TFT_CS, TFT_DC, TFT_RST);
-
 void setup() {
   // Initialize serial communication for debugging
   Serial.begin(9600);
